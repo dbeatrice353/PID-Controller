@@ -7,7 +7,7 @@ class Mouse:
         self.py = 0
         self.vx = 0
         self.vy = 0
-        self.radius = 40
+        self.radius = 0
         self.color = (100,200,100)
 
     def get_position(self):
