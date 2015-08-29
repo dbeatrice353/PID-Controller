@@ -8,7 +8,7 @@ class PIDController:
         self.error_sum_y = 0
 
     def get_u(self,set_point,current_value):
-        # parameters: 
+        # parameters:
         Kp = 30
         Ki = 30
         Kd = 30
