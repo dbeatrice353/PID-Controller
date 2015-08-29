@@ -8,8 +8,11 @@ class Mouse:
         self.vx = 0
         self.vy = 0
         self.radius = 40
-        self.mass = math.pi*self.radius
         self.color = (100,200,100)
+
+    def get_position(self):
+        return (self.px, self.py)
+
     def update(self,time_passed):
         px_temp = self.px
         py_temp = self.py
@@ -17,5 +20,6 @@ class Mouse:
         if time_passed != 0:
             self.vx = (self.px - px_temp)/time_passed
             self.vy = (self.py - py_temp)/time_passed
+
     def render(self,screen):
         pygame.draw.circle(screen,self.color,(self.px,self.py),self.radius)
